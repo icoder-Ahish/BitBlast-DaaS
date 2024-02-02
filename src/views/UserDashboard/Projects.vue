@@ -16,7 +16,6 @@
             </card>
           </div>
 
-          <!--  Admin Project Create Options
           <div class="col-lg-8 col-md-12 col-12">
             <div class="mb-4 card">
               <div class="p-3 card-body">
@@ -35,7 +34,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <div class="py-4 container-fluid">
             <div class="row">
@@ -52,17 +51,17 @@
 
 <script>
 import Card from "@/examples/Cards/Card.vue";
-import AuthorsTable from "./components/ProjectTable.vue";
-// import ArgonInput from "@/components/ArgonInput.vue";
-// import ArgonButton from "@/components/ArgonButton.vue";
+import AuthorsTable from "@/views/components/ProjectTable.vue";
+import ArgonInput from "@/components/ArgonInput.vue";
+import ArgonButton from "@/components/ArgonButton.vue";
 
 export default {
   name: "Cluster",
   components: {
     Card,
     AuthorsTable,
-    // ArgonInput,
-    // ArgonButton,
+    ArgonInput,
+    ArgonButton,
   },
   data() {
     return {

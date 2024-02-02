@@ -16,26 +16,21 @@
             </card>
           </div>
 
-          <!--  Admin Project Create Options
-          <div class="col-lg-8 col-md-12 col-12">
+          <div class="col-lg-3 col-md-12 col-12">
             <div class="mb-4 card">
               <div class="p-3 card-body">
                 <div class="px-4">
-                  <div class="mb-6">
-                    <label
-                      for="projectname"
-                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-black"
-                      >Project Name</label
-                    >
-                    <argon-input type="text" placeholder="Project Name" />
-                    <argon-button color="success" size="md" variant="gradient"
-                      >Create Project</argon-button
-                    >
+                  <div class="mb-3 mt-4">
+                    <router-link to="/cluster-create">
+                      <argon-button color="success" size="md" variant="gradient"
+                        >Create New Cluster</argon-button
+                      >
+                    </router-link>
                   </div>
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
 
           <div class="py-4 container-fluid">
             <div class="row">
@@ -52,23 +47,21 @@
 
 <script>
 import Card from "@/examples/Cards/Card.vue";
-import AuthorsTable from "./components/ProjectTable.vue";
-// import ArgonInput from "@/components/ArgonInput.vue";
-// import ArgonButton from "@/components/ArgonButton.vue";
+import AuthorsTable from "@/views/components/AuthorsTable.vue";
+import ArgonButton from "@/components/ArgonButton.vue";
 
 export default {
   name: "Cluster",
   components: {
     Card,
     AuthorsTable,
-    // ArgonInput,
-    // ArgonButton,
+    ArgonButton,
   },
   data() {
     return {
       stats: {
         money: {
-          title: "All Projects",
+          title: "All Clusters",
           value: "12",
           percentage: "",
           iconClass: "ni ni-money-coins",

@@ -1,12 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 // import Tables from "../views/Tables.vue";
-import Billing from "../views/UserDashboard/Billing.vue";
+
+import ClusterCreate from "../views/UserDashboard/Billing.vue";
 import ClusterSetting from "../views/UserDashboard/ClusterSetting.vue";
+import Clusterss from "../views/UserDashboard/Clusters.vue";
+import Projectss from "../views/UserDashboard/Projects.vue";
+import Providers from "../views/UserDashboard/Providers.vue";
 
 // Made by ashish
-import Clusters from "../views/Clusters.vue";
-import Projects from "../views/Projects.vue";
+import ClustersManagement from "../views/Clusters.vue";
+import ProjectManagement from "../views/Projects.vue";
 import UserManagement from "../views/UserMgmt.vue";
 import Signin from "../views/Signin.vue";
 
@@ -18,6 +22,8 @@ const routes = [
     name: "/",
     redirect: "/signin",
   },
+
+  // Admin route
   {
     path: "/admin-dashboard",
     name: "Dashboard",
@@ -28,21 +34,40 @@ const routes = [
   //   name: "Tables",
   //   component: Tables,
   // },
+
   {
-    path: "/Cluster-Create",
-    name: "Cluster-Create",
-    component: Billing,
+    path: "/Clusters-Management",
+    name: "Clusters-Management",
+    component: ClustersManagement,
   },
+
   {
     path: "/Cluster-Setting",
     name: "Cluster-Setting",
     component: ClusterSetting,
   },
 
+  // User Route
   {
     path: "/Clusters",
     name: "Clusters",
-    component: Clusters,
+    component: Clusterss,
+  },
+  {
+    path: "/Cluster-Create",
+    name: "Cluster-Create",
+    component: ClusterCreate,
+  },
+  {
+    path: "/Projects",
+    name: "Projects",
+    component: Projectss,
+  },
+
+  {
+    path: "/Providers",
+    name: "Providers",
+    component: Providers,
   },
   {
     path: "/User-Management",
@@ -50,9 +75,9 @@ const routes = [
     component: UserManagement,
   },
   {
-    path: "/Projects",
-    name: "Projects",
-    component: Projects,
+    path: "/Project-Management",
+    name: "Project-Management",
+    component: ProjectManagement,
   },
 
   {

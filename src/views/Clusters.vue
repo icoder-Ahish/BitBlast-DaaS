@@ -15,7 +15,7 @@
             >
             </card>
           </div>
-
+          <!-- 
           <div class="col-lg-3 col-md-12 col-12">
               <div class="mb-4 card">
                 <div class="p-3 card-body">
@@ -33,16 +33,15 @@
                   </div>
                 </div>
               </div>
-            </div>
-
+            </div> -->
 
           <div class="py-4 container-fluid">
-            <div class=" row">
+            <div class="row">
               <div class="col-12">
                 <authors-table />
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,12 +51,14 @@
 <script>
 import Card from "@/examples/Cards/Card.vue";
 import AuthorsTable from "./components/AuthorsTable.vue";
-import ArgonButton from "@/components/ArgonButton.vue";
+// import ArgonButton from "@/components/ArgonButton.vue";
 
 export default {
   name: "Cluster",
   components: {
-    Card, AuthorsTable,ArgonButton
+    Card,
+    AuthorsTable,
+    // ArgonButton
   },
   data() {
     return {

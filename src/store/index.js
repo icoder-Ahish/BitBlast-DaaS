@@ -16,7 +16,9 @@ export default createStore({
     showNavbar: true,
     showFooter: true,
     showMain: true,
-    layout: "default"
+    layout: "default",
+
+    username: null,
   },
   mutations: {
     toggleConfigurator(state) {
@@ -44,12 +46,21 @@ export default createStore({
       } else {
         state.isNavFixed = false;
       }
-    }
+    },
+    setUsername(state, username) {
+      state.username = username;
+    },
   },
   actions: {
     toggleSidebarColor({ commit }, payload) {
       commit("sidebarType", payload);
-    }
+    },
+
+    setUsername({ commit }, username) {
+      commit("setUsername", username);
+    },
   },
-  getters: {}
+  getters: {
+    getUsername: (state) => state.username,
+  },
 });

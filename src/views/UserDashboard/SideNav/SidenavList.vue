@@ -97,6 +97,7 @@
           </template>
         </sidenav-item>
       </li>
+
       <li class="nav-item">
         <sidenav-item
           url="/signin"
@@ -110,7 +111,7 @@
       </li>
     </ul>
   </div>
-  <div class="pt-3 mx-3 mt-3 sidenav-footer">
+  <div class="pt-2 mx-3 mt-3 sidenav-footer">
     <sidenav-card :class="cardBg" textPrimary="Need Help?" />
   </div>
 </template>
@@ -128,6 +129,8 @@ export default {
       title: "BitBlast",
       controls: "dashboardsExamples",
       isActive: "active",
+
+      username: "admin",
     };
   },
   components: {
