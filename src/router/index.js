@@ -2,11 +2,12 @@ import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 // import Tables from "../views/Tables.vue";
 
-import ClusterCreate from "../views/UserDashboard/Billing.vue";
+import ClusterCreate from "../views/UserDashboard/Clusterinfo.vue";
 import ClusterSetting from "../views/UserDashboard/ClusterSetting.vue";
 import Clusterss from "../views/UserDashboard/Clusters.vue";
 import Projectss from "../views/UserDashboard/Projects.vue";
 import Providers from "../views/UserDashboard/Providers.vue";
+import UserDashboard from "../views/UserDashboard/UserDashboard.vue";
 
 // Made by ashish
 import ClustersManagement from "../views/Clusters.vue";
@@ -28,6 +29,11 @@ const routes = [
     path: "/admin-dashboard",
     name: "Dashboard",
     component: Dashboard,
+  },
+  {
+    path: "/User-dashboard",
+    name: "UserDashboard",
+    component: UserDashboard,
   },
   // {
   //   path: "/tables",

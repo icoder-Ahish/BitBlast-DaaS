@@ -17,8 +17,8 @@
       </li>
       <li class="nav-item" v-else>
         <sidenav-item
-          url="/admin-dashboard"
-          :class="getRoute() === 'admin-dashboard' ? 'active' : ''"
+          url="/User-dashboard"
+          :class="getRoute() === 'User-dashboard' ? 'active' : ''"
           :navText="'Overview'"
         >
           <template v-slot:icon>
@@ -112,8 +112,8 @@
       </li>
       <li class="nav-item" v-else>
         <sidenav-item
-          url="/User-Management"
-          :class="getRoute() === 'User-Management' ? 'active' : ''"
+          url="/Providers"
+          :class="getRoute() === 'Providers' ? 'active' : ''"
           :navText="'Providers'"
         >
           <template v-slot:icon>
@@ -203,7 +203,7 @@ export default {
       controls: "dashboardsExamples",
       isActive: "active",
 
-      username: "adminn",
+      username: "ashish",
     };
   },
   components: {
